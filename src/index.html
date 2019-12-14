@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+      <title>Messanger</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="./style.css"> /* Подключение css со стилями оболочки(формы)*/
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script> /* Подключение скрипта для отправки email*/
+        <script type="text/javascript">
+          (function(){
+            emailjs.init("user_xXy0SPHAgzXs8FhUe5m7G"); /* Прикрутил функцию со своим ID с https://dashboard.emailjs.com/ для отправки email, код генерирует сайт, после регистрации */
+          })();
+        </script>
+        <style>
+          body {
+            background-repeat: no-repeat; /* Задал параметр, что бы фон не повторялся*/
+            background-image: url(background.png); /* Путь к фоновому изображению */
+            background-color: #90c8e9; /* Цвет фона */
+            background-size: cover; /* Задал масштаб изображения с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+          }
+         </style>
+  </head>
+<body>
+   <div id="stage" class="stage"></div>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script><script  src="./script.js"></script> <!-- Подключение react -->
+</body>
+</html>
